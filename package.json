@@ -8,7 +8,9 @@
     "build:prod": "rm -rf ./dist && tsc",
     "start:prod": "node dist/main.js",
     "link:shared": "npm link @jamestiberiuskirk/fl-shared",
-    "clean": "rm -rf ./dist ./node_modules"
+    "clean": "rm -rf ./dist ./node_modules",
+    "test:dev":"echo 'No tests setup'",
+    "test:ci":"echo 'No tests setup'"
   },
   "author": "Dumitru Vulpe <dumitru.v.dv@gmail.com>",
   "license": "ISC",

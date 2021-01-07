@@ -11,6 +11,8 @@ COPY ./package*.json ./
 RUN npm install
 RUN rm ./.npmrc
 
+RUN npm run test:ci
+
 COPY . ./
 RUN npm run build:prod
 
