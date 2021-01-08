@@ -12,4 +12,4 @@ echo $PAT | docker login ghcr.io --username jamestiberiuskirk --password-stdin
 
 # Build and push the docker image
 docker build -t ghcr.io/jamestiberiuskirk/fl-test:latest . --build-arg PAT=$PAT
-docker push ghcr.io/jamestiberiuskirk/fl-test:latest
+# docker push ghcr.io/jamestiberiuskirk/fl-test:latest # This is disabled in the template
