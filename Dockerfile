@@ -1,5 +1,5 @@
 # For the building env
-FROM node:15-apline as builder
+FROM node:15-slim as builder
 
 ARG PAT
 
@@ -17,7 +17,7 @@ COPY . ./
 RUN npm run build:prod
 
 # For building the prod container with the transpalied js
-FROM node:15-alpine
+FROM node:15-slim
 
 WORKDIR /usr/src/app
 
