@@ -8,7 +8,7 @@
 # docker build -f ./Dockerfile.test . --build-arg PAT=$PAT
 
 # Docker registy login
-echo $PAT | docker login ghcr.io --username jamestiberiuskirk --password-stdin
+echo $PAT | docker login --username jamestiberiuskirk --password-stdin https://ghcr.io 
 
 # Build and push the docker image
 docker build -t ghcr.io/jamestiberiuskirk/fl-test:latest . --build-arg PAT=$PAT
