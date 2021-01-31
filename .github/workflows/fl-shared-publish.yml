@@ -8,7 +8,7 @@ on:
     branches: [ master ]
 
 env:
-  working-dir: ./fitness-logger/fl-shared/
+  working-dir: .
 
 defaults:
   run:
